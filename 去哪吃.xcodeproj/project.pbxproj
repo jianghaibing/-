@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		096E16D61A92452F00D981FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E16D51A92452F00D981FE /* AppDelegate.swift */; };
+		096E16D81A92452F00D981FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E16D71A92452F00D981FE /* ViewController.swift */; };
+		096E16DB1A92452F00D981FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096E16D91A92452F00D981FE /* Main.storyboard */; };
+		096E16DD1A92452F00D981FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096E16DC1A92452F00D981FE /* Images.xcassets */; };
+		096E16E01A92452F00D981FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096E16DE1A92452F00D981FE /* LaunchScreen.xib */; };
+		096E16EC1A92452F00D981FE /* ___Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E16EB1A92452F00D981FE /* ___Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		096E16E61A92452F00D981FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 096E16C81A92452E00D981FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 096E16CF1A92452F00D981FE;
+			remoteInfo = "去哪吃";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		096E16D01A92452F00D981FE /* 去哪吃.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "去哪吃.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		096E16D41A92452F00D981FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096E16D51A92452F00D981FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		096E16D71A92452F00D981FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		096E16DA1A92452F00D981FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		096E16DC1A92452F00D981FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		096E16DF1A92452F00D981FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		096E16E51A92452F00D981FE /* 去哪吃Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "去哪吃Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		096E16EA1A92452F00D981FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096E16EB1A92452F00D981FE /* ___Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___Tests.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		096E16CD1A92452F00D981FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096E16E21A92452F00D981FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		096E16C71A92452E00D981FE = {
+			isa = PBXGroup;
+			children = (
+				096E16D21A92452F00D981FE /* 去哪吃 */,
+				096E16E81A92452F00D981FE /* 去哪吃Tests */,
+				096E16D11A92452F00D981FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		096E16D11A92452F00D981FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				096E16D01A92452F00D981FE /* 去哪吃.app */,
+				096E16E51A92452F00D981FE /* 去哪吃Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		096E16D21A92452F00D981FE /* 去哪吃 */ = {
+			isa = PBXGroup;
+			children = (
+				096E16D51A92452F00D981FE /* AppDelegate.swift */,
+				096E16D71A92452F00D981FE /* ViewController.swift */,
+				096E16D91A92452F00D981FE /* Main.storyboard */,
+				096E16DC1A92452F00D981FE /* Images.xcassets */,
+				096E16DE1A92452F00D981FE /* LaunchScreen.xib */,
+				096E16D31A92452F00D981FE /* Supporting Files */,
+			);
+			path = "去哪吃";
+			sourceTree = "<group>";
+		};
+		096E16D31A92452F00D981FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				096E16D41A92452F00D981FE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		096E16E81A92452F00D981FE /* 去哪吃Tests */ = {
+			isa = PBXGroup;
+			children = (
+				096E16EB1A92452F00D981FE /* ___Tests.swift */,
+				096E16E91A92452F00D981FE /* Supporting Files */,
+			);
+			path = "去哪吃Tests";
+			sourceTree = "<group>";
+		};
+		096E16E91A92452F00D981FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				096E16EA1A92452F00D981FE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		096E16CF1A92452F00D981FE /* 去哪吃 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 096E16EF1A92452F00D981FE /* Build configuration list for PBXNativeTarget "去哪吃" */;
+			buildPhases = (
+				096E16CC1A92452F00D981FE /* Sources */,
+				096E16CD1A92452F00D981FE /* Frameworks */,
+				096E16CE1A92452F00D981FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "去哪吃";
+			productName = "去哪吃";
+			productReference = 096E16D01A92452F00D981FE /* 去哪吃.app */;
+			productType = "com.apple.product-type.application";
+		};
+		096E16E41A92452F00D981FE /* 去哪吃Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 096E16F21A92452F00D981FE /* Build configuration list for PBXNativeTarget "去哪吃Tests" */;
+			buildPhases = (
+				096E16E11A92452F00D981FE /* Sources */,
+				096E16E21A92452F00D981FE /* Frameworks */,
+				096E16E31A92452F00D981FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				096E16E71A92452F00D981FE /* PBXTargetDependency */,
+			);
+			name = "去哪吃Tests";
+			productName = "去哪吃Tests";
+			productReference = 096E16E51A92452F00D981FE /* 去哪吃Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		096E16C81A92452E00D981FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Beijing Gold Finger Education Technology LLC";
+				TargetAttributes = {
+					096E16CF1A92452F00D981FE = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					096E16E41A92452F00D981FE = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 096E16CF1A92452F00D981FE;
+					};
+				};
+			};
+			buildConfigurationList = 096E16CB1A92452E00D981FE /* Build configuration list for PBXProject "去哪吃" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 096E16C71A92452E00D981FE;
+			productRefGroup = 096E16D11A92452F00D981FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				096E16CF1A92452F00D981FE /* 去哪吃 */,
+				096E16E41A92452F00D981FE /* 去哪吃Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		096E16CE1A92452F00D981FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096E16DB1A92452F00D981FE /* Main.storyboard in Resources */,
+				096E16E01A92452F00D981FE /* LaunchScreen.xib in Resources */,
+				096E16DD1A92452F00D981FE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096E16E31A92452F00D981FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		096E16CC1A92452F00D981FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096E16D81A92452F00D981FE /* ViewController.swift in Sources */,
+				096E16D61A92452F00D981FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096E16E11A92452F00D981FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096E16EC1A92452F00D981FE /* ___Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		096E16E71A92452F00D981FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 096E16CF1A92452F00D981FE /* 去哪吃 */;
+			targetProxy = 096E16E61A92452F00D981FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		096E16D91A92452F00D981FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096E16DA1A92452F00D981FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		096E16DE1A92452F00D981FE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096E16DF1A92452F00D981FE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		096E16ED1A92452F00D981FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		096E16EE1A92452F00D981FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		096E16F01A92452F00D981FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "去哪吃/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		096E16F11A92452F00D981FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "去哪吃/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		096E16F31A92452F00D981FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "去哪吃Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/去哪吃.app/去哪吃";
+			};
+			name = Debug;
+		};
+		096E16F41A92452F00D981FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "去哪吃Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/去哪吃.app/去哪吃";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		096E16CB1A92452E00D981FE /* Build configuration list for PBXProject "去哪吃" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096E16ED1A92452F00D981FE /* Debug */,
+				096E16EE1A92452F00D981FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		096E16EF1A92452F00D981FE /* Build configuration list for PBXNativeTarget "去哪吃" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096E16F01A92452F00D981FE /* Debug */,
+				096E16F11A92452F00D981FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		096E16F21A92452F00D981FE /* Build configuration list for PBXNativeTarget "去哪吃Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096E16F31A92452F00D981FE /* Debug */,
+				096E16F41A92452F00D981FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 096E16C81A92452E00D981FE /* Project object */;
+}
