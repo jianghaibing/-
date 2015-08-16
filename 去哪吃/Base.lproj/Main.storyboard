@@ -1,25 +1,260 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="TiN-me-yrQ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--摇一摇就去那-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="摇一摇就去那" id="BYZ-38-t0r" customClass="ViewController" customModule="whereToEat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bacaground" translatesAutoresizingMaskIntoConstraints="NO" id="8TL-8L-Yc7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="添加餐馆，摇一摇就去那" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xV-QF-qmi" customClass="DesignableLabel" customModule="whereToEat" customModuleProvider="target">
+                                <rect key="frame" x="61" y="351" width="198" height="18"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBB-YN-KF6">
+                                <rect key="frame" x="101" y="225" width="118" height="118"/>
+                                <state key="normal" image="addButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wD8-v1-EYL" kind="modal" identifier="modal" id="NQd-Nv-nqA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wan" translatesAutoresizingMaskIntoConstraints="NO" id="nGO-BZ-Tco" customClass="SpringImageView" customModule="whereToEat" customModuleProvider="target">
+                                <rect key="frame" x="88" y="236" width="144" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="5bu-bY-s8K"/>
+                                    <constraint firstAttribute="width" constant="144" id="Il5-Zl-1ML"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuaizi" translatesAutoresizingMaskIntoConstraints="NO" id="BYN-0x-XGG">
+                                <rect key="frame" x="126" y="141" width="58" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="A7H-0u-DDm"/>
+                                    <constraint firstAttribute="height" constant="84" id="ag3-Cw-bHr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你已成功添加！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ix-VB-eRn">
+                                <rect key="frame" x="70" y="471" width="180" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="T9x-HH-ywk"/>
+                                    <constraint firstAttribute="height" constant="30" id="UtG-fc-xMi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8TL-8L-Yc7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1bt-C5-P6x"/>
+                            <constraint firstItem="8TL-8L-Yc7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2bW-r8-eeb"/>
+                            <constraint firstAttribute="centerY" secondItem="nGO-BZ-Tco" secondAttribute="centerY" id="7W4-aF-iZr"/>
+                            <constraint firstItem="BYN-0x-XGG" firstAttribute="leading" secondItem="nGO-BZ-Tco" secondAttribute="trailing" constant="-106" id="Emh-4g-bOZ"/>
+                            <constraint firstItem="6xV-QF-qmi" firstAttribute="top" secondItem="oBB-YN-KF6" secondAttribute="bottom" constant="8" id="FCD-ex-AF9"/>
+                            <constraint firstAttribute="centerX" secondItem="6xV-QF-qmi" secondAttribute="centerX" id="HNC-bO-Fd9"/>
+                            <constraint firstAttribute="centerX" secondItem="oBB-YN-KF6" secondAttribute="centerX" id="Pgr-g5-9tn"/>
+                            <constraint firstItem="8TL-8L-Yc7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="T5w-9Z-2HE"/>
+                            <constraint firstAttribute="centerX" secondItem="1ix-VB-eRn" secondAttribute="centerX" id="Xo3-zp-DMn"/>
+                            <constraint firstItem="8TL-8L-Yc7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="leR-Ny-aR6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1ix-VB-eRn" secondAttribute="bottom" constant="67" id="swB-zt-2IU"/>
+                            <constraint firstItem="nGO-BZ-Tco" firstAttribute="top" secondItem="BYN-0x-XGG" secondAttribute="bottom" constant="11" id="uFV-Pg-bbl"/>
+                            <constraint firstAttribute="centerY" secondItem="oBB-YN-KF6" secondAttribute="centerY" id="usH-wd-ZH0"/>
+                            <constraint firstAttribute="centerX" secondItem="nGO-BZ-Tco" secondAttribute="centerX" id="vPs-MU-Yl6"/>
+                            <constraint firstItem="8TL-8L-Yc7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="w1c-j5-xPR"/>
+                            <constraint firstItem="8TL-8L-Yc7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" priority="750" id="w66-fx-iZc"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="摇一摇就去那" id="dJD-y2-rEG">
+                        <barButtonItem key="leftBarButtonItem" image="canguan" id="A4R-X9-bhc">
+                            <connections>
+                                <segue destination="Fe1-2U-wG5" kind="push" identifier="push" id="J71-IW-3gP"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wXc-Na-9ml">
+                            <connections>
+                                <segue destination="wD8-v1-EYL" kind="modal" identifier="modal" id="d3z-GW-4MY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="addButton" destination="oBB-YN-KF6" id="lJy-LA-fZh"/>
+                        <outlet property="addLable" destination="6xV-QF-qmi" id="vx1-Gf-UX4"/>
+                        <outlet property="backgrounImage" destination="8TL-8L-Yc7" id="Ve5-op-dS9"/>
+                        <outlet property="kuaizi" destination="BYN-0x-XGG" id="5Kh-dV-xiS"/>
+                        <outlet property="tips" destination="1ix-VB-eRn" id="KxY-rs-3pd"/>
+                        <outlet property="wan" destination="nGO-BZ-Tco" id="w6x-fr-LYp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="613" y="329.99999999999994"/>
+        </scene>
+        <!--我的餐馆-->
+        <scene sceneID="bRg-mK-4Mm">
+            <objects>
+                <tableViewController id="Fe1-2U-wG5" customClass="MyLanchTableViewController" customModule="whereToEat" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Z7P-mo-Ub6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="cell" id="F1e-TO-Val">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F1e-TO-Val" id="nkL-cL-kxc">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Fe1-2U-wG5" id="hTq-Xz-kwf"/>
+                            <outlet property="delegate" destination="Fe1-2U-wG5" id="ZIz-Hv-3H0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="我的餐馆" id="fRh-Zy-n6h"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ch-ZD-zhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="985.99999999999989"/>
+        </scene>
+        <!--添加餐馆-->
+        <scene sceneID="l3f-WT-NaW">
+            <objects>
+                <tableViewController id="PLA-Mx-Wmk" customClass="AddTableViewController" customModule="whereToEat" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ZV8-Vb-Yhl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="8n4-jj-upO">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8n4-jj-upO" id="So6-jD-kOc">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="餐馆名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t4d-JX-aGK">
+                                            <rect key="frame" x="16" y="0.0" width="304" height="43"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="43" id="WiG-7B-07w"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="t4d-JX-aGK" firstAttribute="leading" secondItem="So6-jD-kOc" secondAttribute="leading" constant="16" id="dZT-oV-EE1"/>
+                                        <constraint firstAttribute="trailing" secondItem="t4d-JX-aGK" secondAttribute="trailing" id="rRS-dr-Zx6"/>
+                                        <constraint firstItem="t4d-JX-aGK" firstAttribute="top" secondItem="So6-jD-kOc" secondAttribute="top" id="xcs-Xm-mdm"/>
+                                        <constraint firstAttribute="bottom" secondItem="t4d-JX-aGK" secondAttribute="bottom" id="zqF-iN-WgY"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="PLA-Mx-Wmk" id="4Ue-IM-HJ3"/>
+                            <outlet property="delegate" destination="PLA-Mx-Wmk" id="qfY-Bo-HXr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="添加餐馆" id="KiS-dQ-r84">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="TLW-Yt-lpV">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="disMissAction:" destination="PLA-Mx-Wmk" id="52i-dJ-XS1"/>
+                                <segue destination="Ky3-9j-pN5" kind="unwind" unwindAction="cancel:" id="986-bz-L7p"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="完成" id="LTy-FD-Be9">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="Ky3-9j-pN5" kind="unwind" unwindAction="backToView:" id="Eqy-RO-o2G"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ryD-pY-Abk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ky3-9j-pN5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1348" y="320"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bpu-kd-t97">
+            <objects>
+                <navigationController id="wD8-v1-EYL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VZk-fU-MAH"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NIX-DB-QOj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.89803921568627454" green="0.10980392156862745" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PLA-Mx-Wmk" kind="relationship" relationship="rootViewController" id="XXw-88-zTX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uyh-E4-gCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="324.99999999999994"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pvd-Lq-PAH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TiN-me-yrQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FM4-dC-ct6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.89803921568627454" green="0.10980392156862745" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pVp-69-Ras"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1K-Pn-PJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="329.99999999999994"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="addButton" width="118" height="118"/>
+        <image name="bacaground" width="320" height="568"/>
+        <image name="canguan" width="23" height="23"/>
+        <image name="kuaizi" width="58" height="84"/>
+        <image name="wan" width="144" height="97"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="NQd-Nv-nqA"/>
+    </inferredMetricsTieBreakers>
 </document>
