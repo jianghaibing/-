@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09292C7B1B52A79A00999730 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 09292C7A1B52A79A00999730 /* PodFile */; };
+		09292CB41B52A89400999730 /* 摇摇吃 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 099412741AF3EE9700C15451 /* 摇摇吃 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		09292CB71B52A89400999730 /* 摇摇吃 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0994127E1AF3EE9700C15451 /* 摇摇吃 WatchKit App.app */; };
+		0953E3331B80AB2A007AF200 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E3181B80AB2A007AF200 /* BlurView.swift */; };
+		0953E3341B80AB2A007AF200 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E3191B80AB2A007AF200 /* DesignableButton.swift */; };
+		0953E3351B80AB2A007AF200 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E31A1B80AB2A007AF200 /* DesignableImageView.swift */; };
+		0953E3361B80AB2A007AF200 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E31B1B80AB2A007AF200 /* DesignableLabel.swift */; };
+		0953E3371B80AB2A007AF200 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E31C1B80AB2A007AF200 /* DesignableTabBarController.swift */; };
+		0953E3381B80AB2A007AF200 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E31D1B80AB2A007AF200 /* DesignableTextField.swift */; };
+		0953E3391B80AB2A007AF200 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E31E1B80AB2A007AF200 /* DesignableTextView.swift */; };
+		0953E33A1B80AB2A007AF200 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E31F1B80AB2A007AF200 /* DesignableView.swift */; };
+		0953E33B1B80AB2A007AF200 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E3201B80AB2A007AF200 /* ImageLoader.swift */; };
+		0953E33C1B80AB2A007AF200 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0953E3211B80AB2A007AF200 /* Info.plist */; };
+		0953E33D1B80AB2A007AF200 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E3221B80AB2A007AF200 /* KeyboardLayoutConstraint.swift */; };
+		0953E33E1B80AB2A007AF200 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E3231B80AB2A007AF200 /* LoadingView.swift */; };
+		0953E33F1B80AB2A007AF200 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0953E3241B80AB2A007AF200 /* LoadingView.xib */; };
+		0953E3401B80AB2A007AF200 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E3251B80AB2A007AF200 /* Misc.swift */; };
+		0953E3411B80AB2A007AF200 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E3261B80AB2A007AF200 /* SoundPlayer.swift */; };
+		0953E3421B80AB2A007AF200 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E3281B80AB2A007AF200 /* Spring.swift */; };
+		0953E3431B80AB2A007AF200 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E3291B80AB2A007AF200 /* SpringAnimation.swift */; };
+		0953E3441B80AB2A007AF200 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E32A1B80AB2A007AF200 /* SpringButton.swift */; };
+		0953E3451B80AB2A007AF200 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E32B1B80AB2A007AF200 /* SpringImageView.swift */; };
+		0953E3461B80AB2A007AF200 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E32C1B80AB2A007AF200 /* SpringLabel.swift */; };
+		0953E3471B80AB2A007AF200 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E32D1B80AB2A007AF200 /* SpringTextField.swift */; };
+		0953E3481B80AB2A007AF200 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E32E1B80AB2A007AF200 /* SpringTextView.swift */; };
+		0953E3491B80AB2A007AF200 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E32F1B80AB2A007AF200 /* SpringView.swift */; };
+		0953E34A1B80AB2A007AF200 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E3301B80AB2A007AF200 /* TransitionManager.swift */; };
+		0953E34B1B80AB2A007AF200 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E3311B80AB2A007AF200 /* TransitionZoom.swift */; };
+		0953E34C1B80AB2A007AF200 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0953E3321B80AB2A007AF200 /* UnwindSegue.swift */; };
+		096E16D61A92452F00D981FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E16D51A92452F00D981FE /* AppDelegate.swift */; };
+		096E16D81A92452F00D981FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E16D71A92452F00D981FE /* ViewController.swift */; };
+		096E16DB1A92452F00D981FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096E16D91A92452F00D981FE /* Main.storyboard */; };
+		096E16DD1A92452F00D981FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096E16DC1A92452F00D981FE /* Images.xcassets */; };
+		096E16E01A92452F00D981FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096E16DE1A92452F00D981FE /* LaunchScreen.xib */; };
+		096E16EC1A92452F00D981FE /* ___Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E16EB1A92452F00D981FE /* ___Tests.swift */; };
+		096E16F61A925A0800D981FE /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096E16F51A925A0800D981FE /* AddTableViewController.swift */; };
+		099412791AF3EE9700C15451 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099412781AF3EE9700C15451 /* InterfaceController.swift */; };
+		0994127B1AF3EE9700C15451 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0994127A1AF3EE9700C15451 /* Images.xcassets */; };
+		099412871AF3EE9700C15451 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099412851AF3EE9700C15451 /* Interface.storyboard */; };
+		099412891AF3EE9700C15451 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099412881AF3EE9700C15451 /* Images.xcassets */; };
+		09E028B91A93A26A008BD053 /* MyLanchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E028B81A93A26A008BD053 /* MyLanchTableViewController.swift */; };
+		09F0D7F71B80A8FC00C5EA57 /* whereToEat.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 09F0D7F61B80A8FC00C5EA57 /* whereToEat.entitlements */; };
+		55F9799A8FAAA8D74923B8E6 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6466805575A46245D053ADAF /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09292CB21B52A89400999730 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 096E16C81A92452E00D981FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 099412731AF3EE9700C15451;
+			remoteInfo = "摇摇吃 WatchKit Extension";
+		};
+		09292CB51B52A89400999730 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 096E16C81A92452E00D981FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0994127D1AF3EE9700C15451;
+			remoteInfo = "摇摇吃 WatchKit App";
+		};
+		096E16E61A92452F00D981FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 096E16C81A92452E00D981FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 096E16CF1A92452F00D981FE;
+			remoteInfo = "去哪吃";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09292CB81B52A89400999730 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				09292CB41B52A89400999730 /* 摇摇吃 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09292CB91B52A89400999730 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				09292CB71B52A89400999730 /* 摇摇吃 WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09292C7A1B52A79A00999730 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		0953E3181B80AB2A007AF200 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		0953E3191B80AB2A007AF200 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		0953E31A1B80AB2A007AF200 /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		0953E31B1B80AB2A007AF200 /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		0953E31C1B80AB2A007AF200 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
+		0953E31D1B80AB2A007AF200 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		0953E31E1B80AB2A007AF200 /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		0953E31F1B80AB2A007AF200 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		0953E3201B80AB2A007AF200 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		0953E3211B80AB2A007AF200 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0953E3221B80AB2A007AF200 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		0953E3231B80AB2A007AF200 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		0953E3241B80AB2A007AF200 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		0953E3251B80AB2A007AF200 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		0953E3261B80AB2A007AF200 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		0953E3271B80AB2A007AF200 /* Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
+		0953E3281B80AB2A007AF200 /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		0953E3291B80AB2A007AF200 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		0953E32A1B80AB2A007AF200 /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
+		0953E32B1B80AB2A007AF200 /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
+		0953E32C1B80AB2A007AF200 /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
+		0953E32D1B80AB2A007AF200 /* SpringTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextField.swift; sourceTree = "<group>"; };
+		0953E32E1B80AB2A007AF200 /* SpringTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextView.swift; sourceTree = "<group>"; };
+		0953E32F1B80AB2A007AF200 /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
+		0953E3301B80AB2A007AF200 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		0953E3311B80AB2A007AF200 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
+		0953E3321B80AB2A007AF200 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		096E16D01A92452F00D981FE /* whereToEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whereToEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		096E16D41A92452F00D981FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096E16D51A92452F00D981FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		096E16D71A92452F00D981FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		096E16DA1A92452F00D981FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		096E16DC1A92452F00D981FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		096E16DF1A92452F00D981FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		096E16E51A92452F00D981FE /* 去哪吃Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "去哪吃Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		096E16EA1A92452F00D981FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096E16EB1A92452F00D981FE /* ___Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___Tests.swift"; sourceTree = "<group>"; };
+		096E16F51A925A0800D981FE /* AddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTableViewController.swift; sourceTree = "<group>"; };
+		099412741AF3EE9700C15451 /* 摇摇吃 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "摇摇吃 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		099412771AF3EE9700C15451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		099412781AF3EE9700C15451 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0994127A1AF3EE9700C15451 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0994127E1AF3EE9700C15451 /* 摇摇吃 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "摇摇吃 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		099412841AF3EE9700C15451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		099412861AF3EE9700C15451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		099412881AF3EE9700C15451 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		099412941AF3F38300C15451 /* whereToEat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = whereToEat.entitlements; path = ../whereToEat.entitlements; sourceTree = "<group>"; };
+		09E028B81A93A26A008BD053 /* MyLanchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLanchTableViewController.swift; sourceTree = "<group>"; };
+		09F0D7F61B80A8FC00C5EA57 /* whereToEat.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = whereToEat.entitlements; sourceTree = "<group>"; };
+		6466805575A46245D053ADAF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C48E66ACAD6735E77D89CF4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		83A67F6E20300994D2D421C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		096E16CD1A92452F00D981FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F9799A8FAAA8D74923B8E6 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096E16E21A92452F00D981FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		099412711AF3EE9700C15451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0953E3171B80AB2A007AF200 /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				0953E3181B80AB2A007AF200 /* BlurView.swift */,
+				0953E3191B80AB2A007AF200 /* DesignableButton.swift */,
+				0953E31A1B80AB2A007AF200 /* DesignableImageView.swift */,
+				0953E31B1B80AB2A007AF200 /* DesignableLabel.swift */,
+				0953E31C1B80AB2A007AF200 /* DesignableTabBarController.swift */,
+				0953E31D1B80AB2A007AF200 /* DesignableTextField.swift */,
+				0953E31E1B80AB2A007AF200 /* DesignableTextView.swift */,
+				0953E31F1B80AB2A007AF200 /* DesignableView.swift */,
+				0953E3201B80AB2A007AF200 /* ImageLoader.swift */,
+				0953E3211B80AB2A007AF200 /* Info.plist */,
+				0953E3221B80AB2A007AF200 /* KeyboardLayoutConstraint.swift */,
+				0953E3231B80AB2A007AF200 /* LoadingView.swift */,
+				0953E3241B80AB2A007AF200 /* LoadingView.xib */,
+				0953E3251B80AB2A007AF200 /* Misc.swift */,
+				0953E3261B80AB2A007AF200 /* SoundPlayer.swift */,
+				0953E3271B80AB2A007AF200 /* Spring.h */,
+				0953E3281B80AB2A007AF200 /* Spring.swift */,
+				0953E3291B80AB2A007AF200 /* SpringAnimation.swift */,
+				0953E32A1B80AB2A007AF200 /* SpringButton.swift */,
+				0953E32B1B80AB2A007AF200 /* SpringImageView.swift */,
+				0953E32C1B80AB2A007AF200 /* SpringLabel.swift */,
+				0953E32D1B80AB2A007AF200 /* SpringTextField.swift */,
+				0953E32E1B80AB2A007AF200 /* SpringTextView.swift */,
+				0953E32F1B80AB2A007AF200 /* SpringView.swift */,
+				0953E3301B80AB2A007AF200 /* TransitionManager.swift */,
+				0953E3311B80AB2A007AF200 /* TransitionZoom.swift */,
+				0953E3321B80AB2A007AF200 /* UnwindSegue.swift */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
+		096E16C71A92452E00D981FE = {
+			isa = PBXGroup;
+			children = (
+				09292C7A1B52A79A00999730 /* PodFile */,
+				096E16D21A92452F00D981FE /* 去哪吃 */,
+				096E16E81A92452F00D981FE /* 去哪吃Tests */,
+				099412751AF3EE9700C15451 /* 摇摇吃 WatchKit Extension */,
+				099412821AF3EE9700C15451 /* 摇摇吃 WatchKit App */,
+				096E16D11A92452F00D981FE /* Products */,
+				7A7FDA42D4EE0D2903BF3E88 /* Pods */,
+				25AF290B24FB1B448F9E23A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		096E16D11A92452F00D981FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				096E16D01A92452F00D981FE /* whereToEat.app */,
+				096E16E51A92452F00D981FE /* 去哪吃Tests.xctest */,
+				099412741AF3EE9700C15451 /* 摇摇吃 WatchKit Extension.appex */,
+				0994127E1AF3EE9700C15451 /* 摇摇吃 WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		096E16D21A92452F00D981FE /* 去哪吃 */ = {
+			isa = PBXGroup;
+			children = (
+				096E16D51A92452F00D981FE /* AppDelegate.swift */,
+				096E16D71A92452F00D981FE /* ViewController.swift */,
+				096E16F51A925A0800D981FE /* AddTableViewController.swift */,
+				09E028B81A93A26A008BD053 /* MyLanchTableViewController.swift */,
+				096E16D91A92452F00D981FE /* Main.storyboard */,
+				096E16DC1A92452F00D981FE /* Images.xcassets */,
+				096E16DE1A92452F00D981FE /* LaunchScreen.xib */,
+				0953E3171B80AB2A007AF200 /* Spring */,
+				096E16D31A92452F00D981FE /* Supporting Files */,
+			);
+			path = "去哪吃";
+			sourceTree = "<group>";
+		};
+		096E16D31A92452F00D981FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				096E16D41A92452F00D981FE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		096E16E81A92452F00D981FE /* 去哪吃Tests */ = {
+			isa = PBXGroup;
+			children = (
+				096E16EB1A92452F00D981FE /* ___Tests.swift */,
+				096E16E91A92452F00D981FE /* Supporting Files */,
+			);
+			path = "去哪吃Tests";
+			sourceTree = "<group>";
+		};
+		096E16E91A92452F00D981FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				096E16EA1A92452F00D981FE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		099412751AF3EE9700C15451 /* 摇摇吃 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				09F0D7F61B80A8FC00C5EA57 /* whereToEat.entitlements */,
+				099412781AF3EE9700C15451 /* InterfaceController.swift */,
+				0994127A1AF3EE9700C15451 /* Images.xcassets */,
+				099412761AF3EE9700C15451 /* Supporting Files */,
+			);
+			path = "摇摇吃 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		099412761AF3EE9700C15451 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				099412941AF3F38300C15451 /* whereToEat.entitlements */,
+				099412771AF3EE9700C15451 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		099412821AF3EE9700C15451 /* 摇摇吃 WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				099412851AF3EE9700C15451 /* Interface.storyboard */,
+				099412881AF3EE9700C15451 /* Images.xcassets */,
+				099412831AF3EE9700C15451 /* Supporting Files */,
+			);
+			path = "摇摇吃 WatchKit App";
+			sourceTree = "<group>";
+		};
+		099412831AF3EE9700C15451 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				099412841AF3EE9700C15451 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25AF290B24FB1B448F9E23A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6466805575A46245D053ADAF /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A7FDA42D4EE0D2903BF3E88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C48E66ACAD6735E77D89CF4 /* Pods.debug.xcconfig */,
+				83A67F6E20300994D2D421C0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		096E16CF1A92452F00D981FE /* whereToEat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 096E16EF1A92452F00D981FE /* Build configuration list for PBXNativeTarget "whereToEat" */;
+			buildPhases = (
+				CC582F638169A90F68754D1A /* Check Pods Manifest.lock */,
+				096E16CC1A92452F00D981FE /* Sources */,
+				096E16CD1A92452F00D981FE /* Frameworks */,
+				096E16CE1A92452F00D981FE /* Resources */,
+				09292CB91B52A89400999730 /* Embed Watch Content */,
+				632649224A63D17B850D4BED /* Embed Pods Frameworks */,
+				E642475487BBF2C8B6C7C2DA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09292CB61B52A89400999730 /* PBXTargetDependency */,
+			);
+			name = whereToEat;
+			productName = "去哪吃";
+			productReference = 096E16D01A92452F00D981FE /* whereToEat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		096E16E41A92452F00D981FE /* 去哪吃Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 096E16F21A92452F00D981FE /* Build configuration list for PBXNativeTarget "去哪吃Tests" */;
+			buildPhases = (
+				096E16E11A92452F00D981FE /* Sources */,
+				096E16E21A92452F00D981FE /* Frameworks */,
+				096E16E31A92452F00D981FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				096E16E71A92452F00D981FE /* PBXTargetDependency */,
+			);
+			name = "去哪吃Tests";
+			productName = "去哪吃Tests";
+			productReference = 096E16E51A92452F00D981FE /* 去哪吃Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		099412731AF3EE9700C15451 /* 摇摇吃 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 099412901AF3EE9700C15451 /* Build configuration list for PBXNativeTarget "摇摇吃 WatchKit Extension" */;
+			buildPhases = (
+				099412701AF3EE9700C15451 /* Sources */,
+				099412711AF3EE9700C15451 /* Frameworks */,
+				099412721AF3EE9700C15451 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "摇摇吃 WatchKit Extension";
+			productName = "摇摇吃 WatchKit Extension";
+			productReference = 099412741AF3EE9700C15451 /* 摇摇吃 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		0994127D1AF3EE9700C15451 /* 摇摇吃 WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0994128D1AF3EE9700C15451 /* Build configuration list for PBXNativeTarget "摇摇吃 WatchKit App" */;
+			buildPhases = (
+				0994127C1AF3EE9700C15451 /* Resources */,
+				09292CB81B52A89400999730 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09292CB31B52A89400999730 /* PBXTargetDependency */,
+			);
+			name = "摇摇吃 WatchKit App";
+			productName = "摇摇吃 WatchKit App";
+			productReference = 0994127E1AF3EE9700C15451 /* 摇摇吃 WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		096E16C81A92452E00D981FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Beijing Gold Finger Education Technology LLC";
+				TargetAttributes = {
+					096E16CF1A92452F00D981FE = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = YNLT3B3J7K;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					096E16E41A92452F00D981FE = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 096E16CF1A92452F00D981FE;
+					};
+					099412731AF3EE9700C15451 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = YNLT3B3J7K;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					0994127D1AF3EE9700C15451 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = YNLT3B3J7K;
+					};
+				};
+			};
+			buildConfigurationList = 096E16CB1A92452E00D981FE /* Build configuration list for PBXProject "whereToEat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 096E16C71A92452E00D981FE;
+			productRefGroup = 096E16D11A92452F00D981FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				096E16CF1A92452F00D981FE /* whereToEat */,
+				096E16E41A92452F00D981FE /* 去哪吃Tests */,
+				099412731AF3EE9700C15451 /* 摇摇吃 WatchKit Extension */,
+				0994127D1AF3EE9700C15451 /* 摇摇吃 WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		096E16CE1A92452F00D981FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096E16DB1A92452F00D981FE /* Main.storyboard in Resources */,
+				096E16E01A92452F00D981FE /* LaunchScreen.xib in Resources */,
+				09292C7B1B52A79A00999730 /* PodFile in Resources */,
+				0953E33F1B80AB2A007AF200 /* LoadingView.xib in Resources */,
+				0953E33C1B80AB2A007AF200 /* Info.plist in Resources */,
+				096E16DD1A92452F00D981FE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096E16E31A92452F00D981FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		099412721AF3EE9700C15451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0994127B1AF3EE9700C15451 /* Images.xcassets in Resources */,
+				09F0D7F71B80A8FC00C5EA57 /* whereToEat.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0994127C1AF3EE9700C15451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099412871AF3EE9700C15451 /* Interface.storyboard in Resources */,
+				099412891AF3EE9700C15451 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		632649224A63D17B850D4BED /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC582F638169A90F68754D1A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E642475487BBF2C8B6C7C2DA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		096E16CC1A92452F00D981FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0953E34B1B80AB2A007AF200 /* TransitionZoom.swift in Sources */,
+				0953E3491B80AB2A007AF200 /* SpringView.swift in Sources */,
+				09E028B91A93A26A008BD053 /* MyLanchTableViewController.swift in Sources */,
+				0953E3401B80AB2A007AF200 /* Misc.swift in Sources */,
+				0953E3451B80AB2A007AF200 /* SpringImageView.swift in Sources */,
+				0953E3471B80AB2A007AF200 /* SpringTextField.swift in Sources */,
+				096E16D81A92452F00D981FE /* ViewController.swift in Sources */,
+				0953E3331B80AB2A007AF200 /* BlurView.swift in Sources */,
+				0953E3461B80AB2A007AF200 /* SpringLabel.swift in Sources */,
+				096E16D61A92452F00D981FE /* AppDelegate.swift in Sources */,
+				0953E3391B80AB2A007AF200 /* DesignableTextView.swift in Sources */,
+				096E16F61A925A0800D981FE /* AddTableViewController.swift in Sources */,
+				0953E3341B80AB2A007AF200 /* DesignableButton.swift in Sources */,
+				0953E3441B80AB2A007AF200 /* SpringButton.swift in Sources */,
+				0953E3421B80AB2A007AF200 /* Spring.swift in Sources */,
+				0953E3361B80AB2A007AF200 /* DesignableLabel.swift in Sources */,
+				0953E33E1B80AB2A007AF200 /* LoadingView.swift in Sources */,
+				0953E34A1B80AB2A007AF200 /* TransitionManager.swift in Sources */,
+				0953E33A1B80AB2A007AF200 /* DesignableView.swift in Sources */,
+				0953E3381B80AB2A007AF200 /* DesignableTextField.swift in Sources */,
+				0953E3371B80AB2A007AF200 /* DesignableTabBarController.swift in Sources */,
+				0953E3481B80AB2A007AF200 /* SpringTextView.swift in Sources */,
+				0953E33D1B80AB2A007AF200 /* KeyboardLayoutConstraint.swift in Sources */,
+				0953E3351B80AB2A007AF200 /* DesignableImageView.swift in Sources */,
+				0953E3411B80AB2A007AF200 /* SoundPlayer.swift in Sources */,
+				0953E3431B80AB2A007AF200 /* SpringAnimation.swift in Sources */,
+				0953E34C1B80AB2A007AF200 /* UnwindSegue.swift in Sources */,
+				0953E33B1B80AB2A007AF200 /* ImageLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096E16E11A92452F00D981FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096E16EC1A92452F00D981FE /* ___Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		099412701AF3EE9700C15451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099412791AF3EE9700C15451 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09292CB31B52A89400999730 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 099412731AF3EE9700C15451 /* 摇摇吃 WatchKit Extension */;
+			targetProxy = 09292CB21B52A89400999730 /* PBXContainerItemProxy */;
+		};
+		09292CB61B52A89400999730 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0994127D1AF3EE9700C15451 /* 摇摇吃 WatchKit App */;
+			targetProxy = 09292CB51B52A89400999730 /* PBXContainerItemProxy */;
+		};
+		096E16E71A92452F00D981FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 096E16CF1A92452F00D981FE /* whereToEat */;
+			targetProxy = 096E16E61A92452F00D981FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		096E16D91A92452F00D981FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096E16DA1A92452F00D981FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		096E16DE1A92452F00D981FE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096E16DF1A92452F00D981FE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		099412851AF3EE9700C15451 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				099412861AF3EE9700C15451 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		096E16ED1A92452F00D981FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		096E16EE1A92452F00D981FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		096E16F01A92452F00D981FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C48E66ACAD6735E77D89CF4 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = whereToEat.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "去哪吃/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibaby.whereToEat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		096E16F11A92452F00D981FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83A67F6E20300994D2D421C0 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = whereToEat.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "去哪吃/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibaby.whereToEat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		096E16F31A92452F00D981FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "去哪吃Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibaby.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/去哪吃.app/去哪吃";
+			};
+			name = Debug;
+		};
+		096E16F41A92452F00D981FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "去哪吃Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibaby.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/去哪吃.app/去哪吃";
+			};
+			name = Release;
+		};
+		0994128E1AF3EE9700C15451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = "____WatchKit_Extension";
+				INFOPLIST_FILE = "摇摇吃 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibaby.whereToEat.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0994128F1AF3EE9700C15451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = "____WatchKit_Extension";
+				INFOPLIST_FILE = "摇摇吃 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibaby.whereToEat.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		099412911AF3EE9700C15451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "摇摇吃 WatchKit Extension/whereToEat.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "摇摇吃 WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibaby.whereToEat.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		099412921AF3EE9700C15451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "摇摇吃 WatchKit Extension/whereToEat.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "摇摇吃 WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibaby.whereToEat.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		096E16CB1A92452E00D981FE /* Build configuration list for PBXProject "whereToEat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096E16ED1A92452F00D981FE /* Debug */,
+				096E16EE1A92452F00D981FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		096E16EF1A92452F00D981FE /* Build configuration list for PBXNativeTarget "whereToEat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096E16F01A92452F00D981FE /* Debug */,
+				096E16F11A92452F00D981FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		096E16F21A92452F00D981FE /* Build configuration list for PBXNativeTarget "去哪吃Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096E16F31A92452F00D981FE /* Debug */,
+				096E16F41A92452F00D981FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0994128D1AF3EE9700C15451 /* Build configuration list for PBXNativeTarget "摇摇吃 WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0994128E1AF3EE9700C15451 /* Debug */,
+				0994128F1AF3EE9700C15451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		099412901AF3EE9700C15451 /* Build configuration list for PBXNativeTarget "摇摇吃 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				099412911AF3EE9700C15451 /* Debug */,
+				099412921AF3EE9700C15451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 096E16C81A92452E00D981FE /* Project object */;
+}

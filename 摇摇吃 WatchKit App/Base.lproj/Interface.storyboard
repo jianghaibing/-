@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--摇摇吃-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="摇摇吃" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="摇摇吃_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="我要去的餐馆是：" id="jKc-aY-rIK"/>
+                        <label alignment="center" numberOfLines="0" id="RRf-L0-7Ka">
+                            <fontDescription key="font" type="system" pointSize="30"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="开始选择" id="Z45-2a-8vy">
+                            <connections>
+                                <action selector="startShake" destination="AgC-eL-Hgc" id="xDR-xM-5Nt"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="place" destination="RRf-L0-7Ka" id="FKC-GT-ZuK"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
