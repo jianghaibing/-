@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="TiN-me-yrQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="TiN-me-yrQ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--摇一摇就去那-->
@@ -19,15 +19,18 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bacaground" translatesAutoresizingMaskIntoConstraints="NO" id="8TL-8L-Yc7">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="添加餐馆，摇一摇就去那" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xV-QF-qmi" customClass="DesignableLabel" customModule="whereToEat" customModuleProvider="target">
                                 <rect key="frame" x="61" y="351" width="198" height="18"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBB-YN-KF6">
                                 <rect key="frame" x="101" y="225" width="118" height="118"/>
+                                <animations/>
                                 <state key="normal" image="addButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -37,6 +40,7 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wan" translatesAutoresizingMaskIntoConstraints="NO" id="nGO-BZ-Tco" customClass="SpringImageView" customModule="whereToEat" customModuleProvider="target">
                                 <rect key="frame" x="88" y="236" width="144" height="97"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="97" id="5bu-bY-s8K"/>
                                     <constraint firstAttribute="width" constant="144" id="Il5-Zl-1ML"/>
@@ -44,6 +48,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuaizi" translatesAutoresizingMaskIntoConstraints="NO" id="BYN-0x-XGG">
                                 <rect key="frame" x="126" y="141" width="58" height="84"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="58" id="A7H-0u-DDm"/>
                                     <constraint firstAttribute="height" constant="84" id="ag3-Cw-bHr"/>
@@ -51,6 +56,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你已成功添加！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ix-VB-eRn">
                                 <rect key="frame" x="70" y="471" width="180" height="30"/>
+                                <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="T9x-HH-ywk"/>
@@ -61,6 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8TL-8L-Yc7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1bt-C5-P6x"/>
@@ -114,6 +121,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Z7P-mo-Ub6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="cell" id="F1e-TO-Val">
@@ -122,7 +130,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F1e-TO-Val" id="nkL-cL-kxc">
                                     <rect key="frame" x="0.0" y="0.0" width="281" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
                                 </tableViewCellContentView>
+                                <animations/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -144,6 +154,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ZV8-Vb-Yhl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="8n4-jj-upO">
@@ -155,6 +166,7 @@
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="餐馆名称" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t4d-JX-aGK">
                                             <rect key="frame" x="16" y="0.0" width="304" height="43"/>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="43" id="WiG-7B-07w"/>
                                             </constraints>
@@ -163,6 +175,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstItem="t4d-JX-aGK" firstAttribute="leading" secondItem="So6-jD-kOc" secondAttribute="leading" constant="16" id="dZT-oV-EE1"/>
                                         <constraint firstAttribute="trailing" secondItem="t4d-JX-aGK" secondAttribute="trailing" id="rRS-dr-Zx6"/>
@@ -170,6 +183,7 @@
                                         <constraint firstAttribute="bottom" secondItem="t4d-JX-aGK" secondAttribute="bottom" id="zqF-iN-WgY"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <animations/>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -208,6 +222,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NIX-DB-QOj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.89803921568627454" green="0.10980392156862745" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -231,6 +246,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FM4-dC-ct6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.89803921568627454" green="0.10980392156862745" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
