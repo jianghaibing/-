@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090F56BC1BDD014B00BD428C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090F56BB1BDD014A00BD428C /* MapKit.framework */; };
+		090F56BE1BDD044400BD428C /* DealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090F56BD1BDD044400BD428C /* DealsModel.swift */; };
+		090F56C01BDD12AD00BD428C /* ShopsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090F56BF1BDD12AD00BD428C /* ShopsModel.swift */; };
 		09292C7B1B52A79A00999730 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 09292C7A1B52A79A00999730 /* PodFile */; };
 		09292CB41B52A89400999730 /* 摇摇吃 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 099412741AF3EE9700C15451 /* 摇摇吃 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		09292CB71B52A89400999730 /* 摇摇吃 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0994127E1AF3EE9700C15451 /* 摇摇吃 WatchKit App.app */; };
@@ -102,6 +105,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		090F56B81BDCFF7A00BD428C /* whereToEat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "whereToEat-Bridging-Header.h"; sourceTree = "<group>"; };
+		090F56BB1BDD014A00BD428C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		090F56BD1BDD044400BD428C /* DealsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealsModel.swift; sourceTree = "<group>"; };
+		090F56BF1BDD12AD00BD428C /* ShopsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsModel.swift; sourceTree = "<group>"; };
 		09292C7A1B52A79A00999730 /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
 		0953E3181B80AB2A007AF200 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		0953E3191B80AB2A007AF200 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
@@ -177,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090F56BC1BDD014B00BD428C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +255,8 @@
 			children = (
 				096E16D51A92452F00D981FE /* AppDelegate.swift */,
 				096E16D71A92452F00D981FE /* ViewController.swift */,
+				090F56BD1BDD044400BD428C /* DealsModel.swift */,
+				090F56BF1BDD12AD00BD428C /* ShopsModel.swift */,
 				096E16F51A925A0800D981FE /* AddTableViewController.swift */,
 				09E028B81A93A26A008BD053 /* MyLanchTableViewController.swift */,
 				096E16D91A92452F00D981FE /* Main.storyboard */,
@@ -254,6 +264,7 @@
 				096E16DE1A92452F00D981FE /* LaunchScreen.xib */,
 				0953E3171B80AB2A007AF200 /* Spring */,
 				096E16D31A92452F00D981FE /* Supporting Files */,
+				090F56B81BDCFF7A00BD428C /* whereToEat-Bridging-Header.h */,
 			);
 			path = "去哪吃";
 			sourceTree = "<group>";
@@ -324,6 +335,7 @@
 		25AF290B24FB1B448F9E23A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				090F56BB1BDD014A00BD428C /* MapKit.framework */,
 				6466805575A46245D053ADAF /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -422,7 +434,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Beijing Gold Finger Education Technology LLC";
 				TargetAttributes = {
@@ -444,6 +456,9 @@
 						DevelopmentTeam = YNLT3B3J7K;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
 						};
@@ -588,6 +603,7 @@
 				0953E33E1B80AB2A007AF200 /* LoadingView.swift in Sources */,
 				0953E34A1B80AB2A007AF200 /* TransitionManager.swift in Sources */,
 				0953E33A1B80AB2A007AF200 /* DesignableView.swift in Sources */,
+				090F56C01BDD12AD00BD428C /* ShopsModel.swift in Sources */,
 				0953E3381B80AB2A007AF200 /* DesignableTextField.swift in Sources */,
 				0953E3371B80AB2A007AF200 /* DesignableTabBarController.swift in Sources */,
 				0953E3481B80AB2A007AF200 /* SpringTextView.swift in Sources */,
@@ -595,6 +611,7 @@
 				0953E3351B80AB2A007AF200 /* DesignableImageView.swift in Sources */,
 				0953E3411B80AB2A007AF200 /* SoundPlayer.swift in Sources */,
 				0953E3431B80AB2A007AF200 /* SpringAnimation.swift in Sources */,
+				090F56BE1BDD044400BD428C /* DealsModel.swift in Sources */,
 				0953E34C1B80AB2A007AF200 /* UnwindSegue.swift in Sources */,
 				0953E33B1B80AB2A007AF200 /* ImageLoader.swift in Sources */,
 			);
@@ -749,6 +766,7 @@
 			baseConfigurationReference = 6C48E66ACAD6735E77D89CF4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = whereToEat.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -758,6 +776,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibaby.whereToEat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "去哪吃/whereToEat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -767,6 +787,7 @@
 			baseConfigurationReference = 83A67F6E20300994D2D421C0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = whereToEat.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -776,6 +797,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibaby.whereToEat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "去哪吃/whereToEat-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -864,6 +886,7 @@
 				CODE_SIGN_ENTITLEMENTS = "摇摇吃 WatchKit Extension/whereToEat.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -889,6 +912,7 @@
 				CODE_SIGN_ENTITLEMENTS = "摇摇吃 WatchKit Extension/whereToEat.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "摇摇吃 WatchKit Extension/Info.plist";

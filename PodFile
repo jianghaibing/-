@@ -1,2 +1,5 @@
+pod 'AFNetworking'
+pod 'MJExtension'
+
 use_frameworks!
 pod 'Spring', '~> 1.0.3'

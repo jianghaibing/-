@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import AFNetworking
+import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,CLLocationManagerDelegate {
 
     @IBOutlet weak var backgrounImage: UIImageView!
     
@@ -20,32 +22,54 @@ class ViewController: UIViewController {
     var numberOfTemp = 0
     var checkedName:[String] = [""]
     var tempString:[String] = []
+    
+    lazy var clmanager = CLLocationManager()
+    var location:String?
+    //var deals:NSMutableArray!
+    var shops:NSMutableArray!
 
 
     @IBOutlet weak var tips: UILabel!
     
-    @IBOutlet weak var kuaizi: UIImageView!
-    @IBOutlet weak var wan: SpringImageView!
+    @IBOutlet weak var chopsticks: UIImageView!
+    @IBOutlet weak var bowl: SpringImageView!
     @IBOutlet weak var addLable: DesignableLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        clmanager.delegate = self
+        clmanager.startUpdatingLocation()
         
         let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
         let blurView = UIVisualEffectView(effect: blurEffect)
         blurView.frame = view.bounds
         backgrounImage.addSubview(blurView)
         
-        placeNames = [String]()
+//        placeNames = [String]()
         let backItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
         self.navigationItem.backBarButtonItem = backItem
         tips.hidden = true
         //number = placeNames.count
+        addButton.hidden = true
+        chopsticks.hidden = false
+        bowl.hidden = false
+        addLable.text = "摇一摇"
+        chopsticks.layer.anchorPoint = CGPointMake(0, 0)
         
-        addButton.bringSubviewToFront(view)
+//        addButton.bringSubviewToFront(view)
         
     }
     
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        location = "\(locations.last!.coordinate.longitude)" + "," + "\(locations.last!.coordinate.latitude)"
+        if locations.count > 0 {
+            manager.stopUpdatingLocation()
+        }
+        requestShops()
+    }
+    
+    /*
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         //如果数据不为空的时候取得数据给数组
@@ -75,23 +99,23 @@ class ViewController: UIViewController {
         //有无数据分别显示不同视图
         if numberOfPlace > 0 {
             addButton.hidden = true
-            kuaizi.hidden = false
-            wan.hidden = false
+            chopsticks.hidden = false
+            bowl.hidden = false
             addLable.text = "摇一摇"
-            kuaizi.layer.anchorPoint = CGPointMake(0, 0)
+            chopsticks.layer.anchorPoint = CGPointMake(0, 0)
             
             
         }else{
             addButton.hidden = false
-            kuaizi.hidden = true
-            wan.hidden = true
+            chopsticks.hidden = true
+            bowl.hidden = true
             addLable.text = "添加餐馆，摇一摇就去那"
         }
         UIApplication.sharedApplication().applicationSupportsShakeToEdit = true
         self.becomeFirstResponder()
 
     }
-    
+
     override func viewDidAppear(animated: Bool) {
         if let checked: AnyObject = NSUserDefaults.standardUserDefaults().objectForKey("checked") {
             checkedName = checked as! [String]
@@ -102,6 +126,28 @@ class ViewController: UIViewController {
             addLable.text = "先选择餐馆，再摇一摇"
         }
 
+
+    }
+    */
+    func requestShops(){
+        let url = "http://apis.baidu.com/baidunuomi/openapi/searchshops"
+        let params = NSMutableDictionary()
+        params["city_id"] = 100010000
+        params["cat_ids"] = "326"
+//        params["subcat_ids"] = "962,994"
+        params["location"] = location
+        params["radius"] = 1000
+        let sessionConfig = NSURLSessionConfiguration.defaultSessionConfiguration()
+        sessionConfig.HTTPAdditionalHeaders = ["apikey":"35ef1736690acaa25079a5e81794ee59"]
+        sessionConfig.timeoutIntervalForRequest = 6
+        let manager = AFHTTPSessionManager(sessionConfiguration: sessionConfig)
+        manager.GET(url, parameters: params, success: { (_, data) -> Void in
+            let result = data["data"] as! NSDictionary
+            let shopsArray = result["shops"] as! NSArray
+            self.shops = ShopsModel.objectArrayWithKeyValuesArray(shopsArray)
+            }) { (_, error) -> Void in
+                print(error)
+        }
 
     }
     
@@ -116,42 +162,33 @@ class ViewController: UIViewController {
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         //摇动结束
         
-        if event!.subtype == .MotionShake && placeNames.count > 0 {
-            //发生的事情
-            
-            //取得随机数
-            //getRandomNum()
-            number = Int(arc4random_uniform(UInt32(numberOfchecked)))
-            //获取摇动结束后的餐馆
-            if numberOfchecked > 0{
-                //动画事件
-                let shake = CAKeyframeAnimation(keyPath: "transform.rotation")
-                shake.duration = 0.7
-                shake.repeatCount = 3
-                shake.values = [0.0, -M_PI_2/2, 0.0, M_PI_2/2 ,0.0]
-                shake.keyTimes = [0.0, 0.1, 0.2, 0.3, 0.4]
-                kuaizi.layer.addAnimation(shake, forKey: nil)
-                addLable.text = checkedName[number]
-                //println(checkedName)
-//                addLable.alpha = 0
-//                //让文字淡进
-//                UIView.animateWithDuration(6, animations: { () -> Void in
-//                        self.addLable.alpha = 1
-//                    
-//                })
-                addLable.animation = "fadeInDown"
-                addLable.duration = 1
-                addLable.delay = 2
-                addLable.scaleX = 0.5
-                addLable.scaleY = 0.5
-                addLable.animate()
-
-
-                wan.animation = "shake"
-                wan.repeatCount = 3
-                wan.animate()
-            }
+        if event!.subtype == .MotionShake && self.shops.count > 0 {
+        //发生的事情
+        
+        //取得随机数
+        //getRandomNum()
+        self.number = Int(arc4random_uniform(UInt32(self.shops.count)))
+        //获取摇动结束后的餐馆
+        let shake = CAKeyframeAnimation(keyPath: "transform.rotation")
+        shake.duration = 0.7
+        shake.repeatCount = 3
+        shake.values = [0.0, -M_PI_2/2, 0.0, M_PI_2/2 ,0.0]
+        shake.keyTimes = [0.0, 0.1, 0.2, 0.3, 0.4]
+        self.chopsticks.layer.addAnimation(shake, forKey: nil)
+        self.addLable.text = (self.shops[self.number] as! ShopsModel).shop_name
+        self.addLable.animation = "fadeInDown"
+        self.addLable.duration = 1
+        self.addLable.delay = 2
+        self.addLable.scaleX = 0.5
+        self.addLable.scaleY = 0.5
+        self.addLable.animate()
+        
+        
+        self.bowl.animation = "shake"
+        self.bowl.repeatCount = 3
+        self.bowl.animate()
         }
+
     }
     
     /*//获得随机数
